@@ -14,7 +14,28 @@
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* Global resets */
+
+body {
+  line-height: 1.55;
+}
+
 
 *,
 *::before,
@@ -56,6 +77,8 @@ a {
     transparent
   );
   border-bottom: 1px solid rgba(57, 68, 104, 0.5);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.28);
+
 }
 
 .header-content {
@@ -107,6 +130,11 @@ a {
 }
 
 /* Hero */
+
+.hero-panel {
+  animation: fadeSlideUp 0.7s ease-out forwards;
+}
+
 
 .hero {
   padding: 3.5rem 0 2.5rem;
@@ -197,6 +225,10 @@ a {
   color: var(--text-muted);
   max-width: 30rem;
   margin-bottom: 1.3rem;
+  .section-intro {
+  line-height: 1.6;
+}
+
 }
 
 /* Cards */
@@ -213,6 +245,12 @@ a {
   border: 1px solid var(--border-subtle);
   padding: 1rem 1.1rem 1.1rem;
   box-shadow: var(--shadow-soft);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.32);
 }
 
 .card h4 {
@@ -285,6 +323,14 @@ a {
   background: #050814;
   color: var(--text-main);
   font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notify-input-row input[type="email"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.25);
+
 }
 
 .notify-input-row input::placeholder {
@@ -297,6 +343,12 @@ a {
   min-height: 1.1rem;
   opacity: 0.95;
 }
+
+.notify-message.success,
+.notify-message.error {
+  animation: fadeIn 0.25s ease-out;
+}
+
 
 .notify-message.success {
   color: #7fe89b;
