@@ -275,11 +275,19 @@ body {
   .hero {
     padding-top: 2.4rem;
   }
+
+  .notify-input-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .notify-input-row input[type="email"],
+  .notify-input-row .primary-btn {
+    width: 100%;
+  }
 }
-.notify-form { ... }
-.notify-label { ... }
-.notify-input-row { ... }
-.notify-input-row input[type="email"] { ... }
+
+
 .notify-message {
   font-size: 0.8rem;
   margin-top: 0.4rem;
@@ -294,3 +302,5 @@ body {
 .notify-message.error {
   color: #ff9b9b;
 }
+.notify-form { ... }
+.notify-label { ... }
