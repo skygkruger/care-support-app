@@ -102,6 +102,15 @@ body {
   padding: 3.5rem 0 2.5rem;
 }
 
+.hero-panel {
+  background: radial-gradient(circle at top left, rgba(79, 140, 255, 0.12), rgba(5, 7, 15, 0.9));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 1.5rem 1.4rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+}
+
+
 .hero-content {
   display: flex;
   flex-direction: column;
