@@ -8,8 +8,6 @@ if (yearSpan) {
 const notifyForm = document.getElementById("notifyForm");
 const notifyEmailInput = document.getElementById("notifyEmail");
 const notifyMessage = document.getElementById("notifyMessage");
-
-
 const NOTIFY_API_URL = "https://ruf8xprpn6.execute-api.us-west-2.amazonaws.com/notify";
 
 

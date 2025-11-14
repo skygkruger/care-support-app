@@ -267,3 +267,10 @@ body {
     padding-top: 2.4rem;
   }
 }
+.notify-form { ... }
+.notify-label { ... }
+.notify-input-row { ... }
+.notify-input-row input[type="email"] { ... }
+.notify-message { ... }
+.notify-message.success { ... }
+.notify-message.error { ... }

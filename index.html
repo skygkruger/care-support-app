@@ -28,12 +28,28 @@
             A simple space for caregivers, families, and support staff
             supporting individuals with intellectual and developmental disabilities.
           </p>
-          <button class="primary-btn" id="notifyButton">
-            Notify me when new features launch
-          </button>
-          <p class="hero-note">
-            This is an early version. More tools and resources are coming soon.
-          </p>
+          <form class="notify-form" id="notifyForm">
+  <label for="notifyEmail" class="notify-label">
+    Get an email when new tools launch:
+  </label>
+  <div class="notify-input-row">
+    <input
+      type="email"
+      id="notifyEmail"
+      name="email"
+      placeholder="you@example.com"
+      required
+    />
+    <button type="submit" class="primary-btn">
+      Notify me
+    </button>
+  </div>
+  <p class="notify-message" id="notifyMessage"></p>
+</form>
+<p class="hero-note">
+  This is an early version. More tools and resources are coming soon.
+</p>
+
         </div>
       </div>
     </section>
