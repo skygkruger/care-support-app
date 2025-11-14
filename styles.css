@@ -280,6 +280,17 @@ body {
 .notify-label { ... }
 .notify-input-row { ... }
 .notify-input-row input[type="email"] { ... }
-.notify-message { ... }
-.notify-message.success { ... }
-.notify-message.error { ... }
+.notify-message {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  min-height: 1.1rem;
+  opacity: 0.95;
+}
+
+.notify-message.success {
+  color: #7fe89b;
+}
+
+.notify-message.error {
+  color: #ff9b9b;
+}
